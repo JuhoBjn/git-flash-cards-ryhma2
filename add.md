@@ -1,10 +1,17 @@
 # Git add
 
-Git "add" -komennolla lisätään tiedostoja valmistelualueelle.
+Git "add" -komennolla lisätään tiedostoja indeksiin commitoitavaksi.
 
-Add -komento päivittää valmistelualueelle työpuussa olevia tiedostoja. Eri valintojen avulla voidaan valita halutut tiedostot lisättäväksi valmistelualueelle.
+## Kuvaus 
+Git "add" -komento päivittää indeksiin työpuusta löytyviä tiedostoja.
+Optioiden avulla indeksiin lisättäviä tiedostoja voidaan valita tai poistaa polut tiedostoihin, jotka eivät enään ole työpuussa.
+
+"Indeksi" sisältää snapshotin valituista työpuun tiedostoista. Tämän indeksin sisältö tulee olemaan seuraavan commitin sisältö. 
+Tämän takia komento "git add" on ajettava aina ennen committia, jotta uusimmat muutoksen sisältyvät seuraavaan committiin.
 
 ## Komennon käyttö ja valinnat:
+Alla komennon "git add -h" tulostus.
+
 git add [<options>] [--] <pathspec>...
 
     -n, --dry-run         dry run
@@ -26,5 +33,6 @@ git add [<options>] [--] <pathspec>...
     --pathspec-from-file <file>
                           read pathspec from file
     --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
 
 
