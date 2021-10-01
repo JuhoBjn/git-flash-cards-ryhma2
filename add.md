@@ -11,7 +11,7 @@ Tämän takia komento "git add" on ajettava aina ennen committia, jotta uusimmat
 
 ## Komennon käyttö ja valinnat:
 Alla komennon "git add -h" tulostus.
-
+```
 git add [<options>] [--] <pathspec>...
 
     -n, --dry-run         dry run
@@ -33,6 +33,4 @@ git add [<options>] [--] <pathspec>...
     --pathspec-from-file <file>
                           read pathspec from file
     --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
-
-
-
+```
