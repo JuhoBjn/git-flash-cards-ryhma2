@@ -1,0 +1,14 @@
+#Git checkout
+
+Git checkout - komennolla voidaan luoda erillisiä polkuja työhakemistoon, jotka voidaan liittää projektiin yhdistämällä hakemistot
+
+#Kuvaus
+
+Käyttämällä polkuja, eli brancheja, voidaan työstää tiedostoja muokkaamatta olemassaolevaa projektia.
+
+git checkout -b nimi , komennolla voidaan tehdä uusi polku (nimi kohtaan tulee polun nimi)
+git checkout master , komento palaa takaisin pääpolkuun
+git branch -d nimi, poistaa kyseisen polun
+
+##Komennon käyttö ja valinnat:
+
