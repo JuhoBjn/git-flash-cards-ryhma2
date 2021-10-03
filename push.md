@@ -13,7 +13,9 @@ Lisäämällä koukkuja voidaan saada mielenkiintoisia asioita tapahtumaan.
 Kun push:in kohdetta ei määritellä komennon "repository" argumentissa, muutokset työnnetään `branch.*.remote` tiedostossa määriteltyyn sijaintiin.
 Määrittelyn poissaollessa työnnetään muutokset oletuksena originiin.
 
-Ellei toisin määritellä, komento push työntää muutokset tiedoston `push.default` mukaan. Työnnettävät muutokset voidaan määritellä `<refspec>` 
+Ellei toisin määritellä, komento push työntää muutokset tiedoston `push.default` mukaan. Työnnettävät muutokset voidaan määritellä `<refspec>` tai esim. --all, --mirror tai --tags optioilla.
+
+Kun komennolle ei anneta ylimääräisiä argumentteja, työnnetään kaikki muutokset oletuksena annettuun ylätasoon.
 
 ```
 usage: git push [<options>] [<repository> [<refspec>...]]
